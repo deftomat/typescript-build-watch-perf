@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "pretty": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./",
+    "lib": ["ES2020"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "declaration": true,
+    "declarationMap": true,
+    "target": "ES2019",
+    "isolatedModules": true,
+    "types": ["node"],
+    "paths": {
+      "@app/*": ["./packages/*"]
+    }
+  },
+  "exclude": ["**/node_modules"],
+  "watchOptions": {
+    "watchFile": "useFsEventsOnParentDirectory",
+    "watchDirectory": "useFsEvents",
+    "excludeDirectories": ["**/node_modules"]
+  }
+}
